@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyjaśnienie definicji:</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wyjaśnienie definicji:</h1>
+    <p>
+        Wyrażenie <strong>∃!x : p(x)</strong> oznacza, że istnieje dokładnie jedno x, dla którego forma zdaniowa p(x) jest prawdziwa.
+    </p>
+    <p>
+        Definicja:
+        <strong>∃!x : p(x) ≡ (∃x : p(x) ∧ (∀y, z : (p(y) ∧ p(z)) ⇒ y = z))</strong>
+    </p>
+    <p>
+        Wyjaśnienie:
+        <ul>
+            <li><strong>∃x : p(x)</strong> - istnieje co najmniej jedno x, dla którego p(x) jest prawdziwe.</li>
+            <li><strong>∀y, z : (p(y) ∧ p(z)) ⇒ y = z</strong> - jeśli istnieją dwie liczby y i z, które spełniają to wyrażenie, to muszą być równe, co oznacza, że istnieje tylko jedna taka wartość, która je spełnia.</li>
+        </ul>
+    </p>
+    <p>
+        PS. Każde z wyrażeń p(.) jest tym samym wyrażeniem tylko podpisaliśmy pod nie różne zmienne (można myśeć o tym jak o funkcji).
+    </p>
+</body>
+</html>
